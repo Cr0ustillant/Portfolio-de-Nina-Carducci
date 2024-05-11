@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,22 +18,22 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+header .name {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -69,7 +69,9 @@ body {
 
 .picture img {
 	width: 100%;
-
+}
+.img-slider {
+	width: 100%;
 }
 #about-me {
 	flex: 2
@@ -102,7 +104,7 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #716c35;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -239,9 +241,27 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
+
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+footer {
+	position:static;
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	color: white;
+	padding: 50px;
+}
+footer div {
+	text-align: center;
+	margin: 0;
+}
+footer ul li {
+	margin: 5px;
+	font-size: 20px;
 }
 
 @media all and (max-width: 1180px) {
@@ -320,15 +340,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header nav, header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
@@ -351,6 +371,9 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+	footer ul li{
+		font-size: 12px;
 	}
 }
 

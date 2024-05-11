@@ -119,6 +119,9 @@
         .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
+
+    // Selecteur d'image du carrousel
+
     prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -195,6 +198,9 @@
       next = imagesCollection[index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
+
+    // Modal ?
+
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
