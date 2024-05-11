@@ -6,15 +6,51 @@
 	<!-- Métadonnées FaceBook -->
 	<meta property="og:title" content="Portfolio de Nina Carducci">
 	<meta property="og:description" content="Explorez le portfolio de Nina Carducci, mettant en valeur ses projets, ses services proposés et les informations nécessaires pour la contacter. Découvrez son travail et trouvez comment elle peut vous aider à concrétiser vos projets. Contactez-la dès aujourd'hui pour discuter de votre prochain projet créatif!">
-	<meta property="og:image" content="URL_de_votre_image">
-	<meta property="og:url" content="URL_de_votre_page">
-	<meta property="og:type" content="Type_de_contenu">
+	<meta property="og:image" content="https://cr0ustillant.github.io/Portfolio-de-Nina-Carducci/assets/nina.webp">
+	<meta property="og:url" content="https://cr0ustillant.github.io/Portfolio-de-Nina-Carducci/">
+	<meta property="og:type" content="website">
+	<meta property="og:local" content="fr_FR" />
 	<!-- Métadonnées Twitter -->
-	<meta name="twitter:card" content="Type_de_la_carte">
-	<meta name="twitter:site" content="@Nom_de_votre_compte_Twitter">
+	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Portfolio de Nina Carducci">
 	<meta name="twitter:description" content="Explorez le portfolio de Nina Carducci, mettant en valeur ses projets, ses services proposés et les informations nécessaires pour la contacter. Découvrez son travail et trouvez comment elle peut vous aider à concrétiser vos projets. Contactez-la dès aujourd'hui pour discuter de votre prochain projet créatif!">
-	<meta name="twitter:image" content="URL_de_votre_image">
+	<meta name="twitter:image" content="https://cr0ustillant.github.io/Portfolio-de-Nina-Carducci/assets/nina.webp">
+	<!-- Métadonnées Shema.org -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "ProfessionalService",
+			"name": "Nina Carducci",
+			"creator": {
+				"@type": "Person",
+				"name": "Nina Carducci"
+			  },
+			"image": "./assets/images/nina.webp",
+			"url": "https://ninacarducci.github.io/",
+			"address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200",
+			  "addressCountry": "FR"
+			},
+			"telephone": "+33556677889",
+			"openingHoursSpecification": [
+			  {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+				  "Monday",
+				  "Tuesday",
+				  "Wednesday",
+				  "Thursday",
+				  "Friday"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+			  }
+			]
+		  }
+	</script>
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -172,15 +208,15 @@
 </main>
 <footer>
 	<div itemscope itemtype="http://schema.org/LocalBusiness">
-		<span itemprop="name">Nina Carducci</span>
-		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-			<span itemprop="addressLocality">Bordeaux</span>,
-			<span itemprop="addressRegion">Bordeaux</span>
-			<span itemprop="postalCode">33200</span>
-		</div>
-		<span itemprop="telephone">05 56 67 78 89</span>
-		<span itemprop="openingHours" content="Mo-Fr 10:00-19:00">Me contacter du lundi au vendredi de 10h à 19h</span>
+        <span itemprop="name">Nina Carducci</span>
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
+            <span itemprop="addressLocality">Bordeaux</span>,
+            <span itemprop="addressRegion">Bordeaux</span>
+            <span itemprop="postalCode">33200</span>
+        </address>
+        <span itemprop="telephone">05 56 67 78 89</span>
+        <time itemprop="openingHours" datetime="Mo-Fr 10:00-19:00">Me contacter du lundi au vendredi de 10h à 19h</time>
 	</div>
 </footer>
 </body>
